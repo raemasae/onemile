@@ -1,0 +1,37 @@
+.section03.in_value.loyalty {
+  border-top: none;
+
+  .value_charts {
+    .charts {
+      &_large {
+        &_content {
+          &_column {
+            p:nth-child(odd) {
+              color: $primary-color;
+            }
+
+            p {
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section03.tools.spotlight {
+  .contain {
+    .primary_article {
+      &_content {
+        .primary_title {
+          .category_tab {
+            p {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

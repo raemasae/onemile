@@ -1,0 +1,35 @@
+.primary_article_content {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  .primary_title {
+    width: 70%;
+    float: right;
+    padding-left: 1rem;
+  }
+
+  .primary-img {
+    width: 30%;
+    margin-bottom: 0.5rem;
+
+    .primary_article-img {
+      width: 100%;
+    }
+  }
+
+  .primary_text {
+    p {
+      color: #2a2a2a;
+    }
+
+    p:hover {
+      color: #999;
+      cursor: pointer;
+    }
+  }
+
+  .date {
+    font-size: 0.5rem;
+    padding-top: 0.3rem;
+  }
+}

@@ -1,0 +1,44 @@
+
+.hero.beginners_guide {
+  background-image: none;
+  padding-bottom: 0;
+}
+
+.grid_articles {
+  display: block;
+  margin-top: 7rem;
+
+  .grid_articles_large {
+    h3 {
+      padding: 14rem 2rem 0;
+    }
+
+    h4 {
+      padding: 0 2rem;
+    }
+
+    p {
+      padding: 0 2rem 1rem;
+    }
+  }
+
+  .grid_articles_large.credit {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+  }
+
+  .grid_articles_small {
+    .grid_articles_small_content {
+      width: 50vw;
+      height: 200px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: multiply;
+
+      h4 {
+        font-size: 1rem;
+        padding: 8.25rem 1rem 1rem;
+      }
+    }
+  }
+}

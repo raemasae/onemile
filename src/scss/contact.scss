@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hero.contact {
+  background-image: url('src/images/Contact-us-HD.jpg');
+  max-height: 500px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+
+  .contact_intro {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 2rem;
+    width: 50vw;
+
+    h2,
+    h4 {
+      color: white;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      padding-bottom: 0.7rem;
+      font-weight: 900;
+    }
+
+    h4 {
+      font-size: 1rem;
+      text-shadow: 0.5px 0.5px 1px rgba(107, 106, 106, 0.3);
+    }
+
+    .ben {
+      text-align: right;
+      padding-right: 7rem;
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+.contact_form {
+  background-color: #f5f7f8;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem 7rem;
+
+  &_content {
+    .contact_form_field {
+      p {
+        width: 100px;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+      }
+
+      .message {
+        height: 200px;
+      }
+    }
+  }
+}

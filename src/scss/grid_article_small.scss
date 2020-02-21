@@ -1,0 +1,50 @@
+.grid_articles {
+  .grid_articles_small {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .one {
+    background-image: url('src/images/miles_points.jpg');
+    overflow-x: hidden;
+  }
+
+  .two {
+    background-image: url('src/images/GoldHotelCollection.jpg');
+  }
+
+  .three {
+    background-image: url('src/images/tail_lineup.jpg');
+  }
+
+  .four {
+    background-image: url('src/images/credit_cards.jpg');
+  }
+
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  .four:hover {
+    @include hover;
+  }
+}
+
+.grid_articles {
+  .grid_articles_small.credit {
+    .one {
+      background-image: url('src/images/sunset_airplane.jpg');
+    }
+
+    .two {
+      background-image: url('src/images/hotel_cc.jpg');
+    }
+
+    .three {
+      background-image: url('src/images/flex_cc.jpg');
+    }
+
+    .four {
+      background-image: url('src/images/smbus_cc.jpg');
+    }
+  }
+}

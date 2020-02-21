@@ -1,0 +1,86 @@
+.section03.in_value {
+  border-top: 1px solid #999;
+  border-bottom: none;
+
+  .value_charts {
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .charts_large {
+      .charts_large_header_underline {
+        border-bottom: 5px solid #e56701;
+        width: 150px;
+        height: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .charts_large_content,
+      .charts_small_content {
+        display: flex;
+        justify-content: space-between;
+
+        &_column {
+          margin-bottom: 3rem;
+
+          h4 {
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            font-size: 0.6rem;
+            text-transform: capitalize;
+          }
+
+          p:nth-child(odd) {
+            color: $primary-color;
+          }
+
+          p {
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.value_articles,
+.award_articles {
+  .grid_articles_large.value_large,
+  .grid_articles_large.award_large {
+    background-image: url('src/images/nyc.jpg');
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 300px;
+
+    h3 {
+      padding-top: 3rem;
+    }
+  }
+
+  .grid_articles_large.pointspro,
+  .grid_articles_large.lucky {
+    h3 {
+      padding-top: 0;
+    }
+  }
+
+  .grid_articles_large.value_large:hover {
+    @include hover;
+  }
+
+  .grid_articles_large.award_large:hover {
+    @include hover;
+  }
+}
+
+.award_articles {
+  .grid_articles {
+    .grid_articles.in_award.lucky_block {
+      .grid_articles_large.award_large.lucky:hover {
+        @include hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+@media (min-width: 900px) {
+  .grid_articles {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    width: 100%;
+
+    .grid_articles_large {
+      width: 50vw;
+      height: 500px;
+
+      h3 {
+        padding-top: 17rem;
+      }
+    }
+
+    .grid_articles_small {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50vw;
+
+      .grid_articles_small_content {
+        width: 25vw;
+        height: 250px;
+
+        h4 {
+          color: white;
+          text-shadow: 0.5px 0.5px 10px rgba(107, 106, 106, 0.54);
+          font-size: 1.2rem;
+          padding-top: 11rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero.beginners_guide {
+    display: flex;
+    justify-content: space-between;
+
+    .hero-nav {
+      width: 75%;
+      height: 250px;
+      display: inline-flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+
+      .hero-nav-items {
+        display: inline-flex;
+        margin-right: 2rem;
+        line-height: 250px;
+        padding: 0;
+      }
+
+      .tools_dropdown {
+        position: relative;
+
+        .dropdown-nav {
+          display: none;
+          position: absolute;
+          top: 8.5rem;
+
+          ul {
+            padding: 0;
+
+            li {
+              line-height: 1rem;
+              margin: 0;
+
+              a {
+                font-family: $font-family-headers;
+              }
+
+              a:hover {
+                font-weight: bold;
+              }
+            }
+
+            li:first-child {
+              border-top: 0.5px solid white;
+              padding-top: 1rem;
+              width: 140px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      .tools_dropdown:hover {
+        .dropdown-nav {
+          display: block;
+        }
+      }
+
+      li {
+        width: 201px;
+        text-align: center;
+        margin: 0 0.25rem;
+
+        a {
+          color: black;
+        }
+      }
+
+      .search_tag {
+        align-self: center;
+        margin-left: 0.5rem;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .nav_active {
+        background: black;
+        height: 100%;
+
+        a {
+          color: white;
+        }
+      }
+
+      li:hover {
+        background: black;
+        width: 201px;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .grid_articles {
+    .grid_articles_large {
+      height: 600px;
+
+      h3 {
+        padding-top: 25rem;
+      }
+    }
+
+    .grid_articles_small {
+      .grid_articles_small_content {
+        height: 300px;
+
+        h4 {
+          padding-top: 13rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .grid_articles {
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: center;
+
+    .grid_articles_large {
+      width: 900px;
+    }
+
+    .grid_articles_small {
+      .grid_articles_small_content {
+        width: 450px;
+      }
+    }
+  }
+}

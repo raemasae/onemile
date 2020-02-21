@@ -1,0 +1,32 @@
+.section03.portals_article {
+  .portals_article_img {
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .portals_article_content {
+    h2 {
+      margin-bottom: 0.3rem;
+    }
+
+    .date {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+
+      span {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.section03.in_value.loyalty.shopping {
+  padding-top: 5rem;
+}

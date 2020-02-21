@@ -1,0 +1,50 @@
+.sublinks {
+  margin-bottom: 3rem;
+
+  .orange_box {
+    border: 7px solid $primary_color;
+    width: 150px;
+    height: 150px;
+    margin: 3rem auto 1rem;
+
+    .pointer_line {
+      border-right: 1.5px solid #999;
+      height: 70px;
+      position: relative;
+      bottom: -120px;
+      right: 65px;
+    }
+  }
+
+  h3,
+  p.signup {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 140px;
+  }
+
+  p.signup {
+    font-size: 0.8rem;
+    font-family: $font-family-headers;
+    padding-bottom: 0.5rem;
+  }
+
+  .sublinks_links {
+    position: relative;
+    bottom: 30px;
+
+    p {
+      color: $primary_color;
+      margin-top: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font-family-headers;
+    }
+
+    p:hover {
+      color: #2a2a2a;
+    }
+  }
+}

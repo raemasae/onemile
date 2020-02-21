@@ -1,0 +1,114 @@
+$font-family-headers: 'Lato', sans-serif;
+$font-family-p: 'Libre Baskerville', serif;
+
+$primary-header-weight: 900;
+$primary-header-font-size: 2.5rem;
+$primary-header-letter-spacing: 4px;
+$primary-header-line-height: 1.1;
+
+$h2-font-size: 2rem;
+$h2-font-weight: 700;
+$h2-letter-spacing: 3px;
+
+$h3-font_size: 1.7rem;
+$h3-letter-spacing: 3px;
+$h3-line-height: 1.1;
+
+$h4-font-size: 1.2rem;
+
+$date-font-size: 0.8rem;
+$date-letter-spacing: 2px;
+$date-text-transform: uppercase;
+
+$paragraph-font-size: 0.85rem;
+$paragraph-letter-spacing: 1.5px;
+$paragraph-line-height: 1.75;
+$paragraph-font-weight: 400;
+
+$nav-font-size: 0.8rem;
+
+$hero-header-font-color: #fff;
+
+$primary-color: #f86c0b;
+
+$hover-color: #dcdada;
+
+@mixin divider-line {
+  border-bottom: 1px solid #999;
+}
+
+@mixin hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@mixin side_nav_hover {
+  font-weight: 700;
+  color: black;
+}
+
+@mixin side_nav_no_hover {
+  font-weight: 300;
+  color: #999;
+}
+
+@mixin divider-line-top {
+  border-bottom: 1px solid #999;
+  margin-bottom: 5rem;
+  border-top: 1px solid #999;
+  height: 4.5rem;
+}
+
+h1 {
+  font-family: $font-family-headers;
+  font-weight: $primary-header-weight;
+  font-size: $primary-header-font-size;
+  letter-spacing: $primary-header-letter-spacing;
+  line-height: $primary-header-line-height;
+}
+
+h2 {
+  font-family: $font-family-headers;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  letter-spacing: $h2-letter-spacing;
+}
+
+h3 {
+  font-family: $font-family-headers;
+  font-size: $h3-font_size;
+  letter-spacing: $h3-letter-spacing;
+  line-height: $h3-line-height;
+}
+
+h4 {
+  font-family: $font-family-headers;
+  font-size: $h4-font-size;
+  letter-spacing: $date-letter-spacing;
+  line-height: 1.25;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-family: $font-family-headers;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-family: $font-family-p;
+  font-size: $paragraph-font-size;
+  letter-spacing: $paragraph-letter-spacing;
+  line-height: $paragraph-line-height;
+  font-weight: $paragraph-font-weight;
+}
+
+li {
+  list-style: none;
+  font-family: $font-family-p;
+  font-size: $nav-font-size;
+  text-transform: $date-text-transform;
+}
+
+a {
+  text-decoration: none;
+  color: $hero-header-font-color;
+}

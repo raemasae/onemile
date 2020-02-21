@@ -1,0 +1,118 @@
+$font-family-headers: 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.date {
+  font-family: $font-family-p;
+  font-size: $date-font-size;
+  letter-spacing: $date-letter-spacing;
+  line-height: $paragraph-line-height;
+  text-transform: $date-text-transform;
+}
+
+.hero {
+  background-image: url('src/images/airport_home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-bottom: 300px;
+}
+
+.hero {
+  .logo {
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .hero-nav {
+    display: none;
+  }
+
+  .toggle {
+    width: 40px;
+    position: absolute;
+    right: 2rem;
+    top: 1.3rem;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .toggle-search {
+    width: 70px;
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+  }
+}
+
+.intro {
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+
+  h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+.promo {
+  margin: 0 1rem 3rem;
+  padding-bottom: 3rem;
+
+  @include divider-line;
+
+  .promo-content {
+    padding-bottom: 1rem;
+  }
+
+  h5 {
+    padding-bottom: 0.7rem;
+  }
+
+  .promo-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.home_large_article {
+  margin: 0 3rem;
+  padding-bottom: 1rem;
+
+  @include divider-line;
+}
+
+.section03 h1 {
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 2rem;
+  margin: 2rem 0;
+
+  @include divider-line;
+}
+
+.section03 {
+  margin: 0 1rem;
+  padding-bottom: 3rem;
+
+  @include divider-line;
+}
+
+.section03:last-of-type {
+  border-bottom: none;
+}
+
+.forum {
+  margin: 0 1rem;
+}

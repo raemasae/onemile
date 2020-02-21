@@ -1,0 +1,504 @@
+@mixin divider-line {
+  border-bottom: 1px solid #999;
+}
+
+@media screen and (min-width: 500px) {
+  .intro {
+    padding: 3rem;
+  }
+
+  .promo {
+    margin: 0 3rem 3rem;
+  }
+
+  .home_large_article {
+    .large_article {
+      padding: 2rem 5rem;
+    }
+  }
+
+  .section03 {
+    margin: 0 3rem;
+
+    .primary_title {
+      width: 60%;
+    }
+
+    .primary-img {
+      width: 40%;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .button {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    .toggle {
+      width: 40px;
+      top: 1.5rem;
+    }
+  }
+
+  .intro {
+    padding: 3rem 1rem;
+    max-width: 900px;
+  }
+
+  .promo {
+    margin: 0 auto;
+    max-width: 900px;
+
+    .contain.promo_contain {
+      display: flex;
+      justify-content: space-between;
+
+      .promo-content {
+        align-self: flex-end;
+        padding: 0 1rem;
+        width: 50%;
+
+        h5 {
+          font-size: 1rem;
+        }
+
+        .promo-img {
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .home_large_article {
+    display: flex;
+    justify-content: space-around;
+
+    .contain.large_article_contain {
+      display: flex;
+      justify-content: space-around;
+      max-width: 900px;
+
+      .large_article {
+        padding: 2rem 0;
+        width: calc(45% - 1rem);
+      }
+    }
+  }
+
+  .primary_article {
+    .primary_article_content {
+      margin: 3rem auto;
+      max-width: 767px;
+      height: 300px;
+
+      .primary_title {
+        padding-left: 0;
+        padding-bottom: 1rem;
+      }
+
+      .primary-img {
+        float: left;
+        padding-right: 1.5rem;
+
+        .primary_article-img {
+          max-height: 300px;
+        }
+      }
+    }
+  }
+
+  .section03.tools.travel {
+    .contain {
+      .travel_category_title {
+        .travel_filter_buttons {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section03.tools.travel {
+    .contain {
+      .travel_category_title {
+        margin: 5rem auto;
+
+        .travel_filter_buttons {
+          justify-content: center;
+
+          .button {
+            margin: 0;
+            margin-right: 1rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro,
+  .promo,
+  .home_large_article,
+  .section03,
+  .value_articles,
+  .award_articles {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .contain {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  .promo {
+    padding: 2rem 2rem 5rem;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .hero.header {
+    .hero_header_content {
+      display: flex;
+      justify-content: space-between;
+
+      .hero-nav {
+        width: 75%;
+        height: 250px;
+        display: inline-flex;
+        justify-content: flex-end;
+
+        .hero-nav-items.home {
+          display: inline-flex;
+          margin-right: 2rem;
+          line-height: 250px;
+          padding: 0;
+        }
+
+        .tools_dropdown {
+          position: relative;
+
+          .dropdown-nav {
+            display: none;
+            position: absolute;
+            top: 8.5rem;
+
+            ul {
+              padding: 0;
+
+              li {
+                line-height: 1rem;
+                margin: 0;
+
+                a {
+                  font-family: $font-family-headers;
+                }
+
+                a:hover {
+                  font-weight: bold;
+                }
+              }
+
+              li:first-child {
+                border-top: 0.5px solid white;
+                padding-top: 1rem;
+                width: 140px;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+
+        .tools_dropdown:hover {
+          .dropdown-nav {
+            display: block;
+          }
+        }
+
+        li {
+          width: 201px;
+          margin: 0 auto;
+          text-align: center;
+
+          a {
+            color: white;
+          }
+        }
+
+        .search_tag {
+          align-self: center;
+          margin-left: 0.5rem;
+
+          img {
+            width: 20px;
+          }
+        }
+
+        li:hover {
+          background: black;
+          width: 201px;
+        }
+      }
+    }
+  }
+
+  .hero.contact {
+    display: flex;
+    justify-content: space-between;
+
+    .hero-nav {
+      width: 75%;
+      height: 250px;
+      display: inline-flex;
+      justify-content: flex-end;
+
+      .hero-nav-items {
+        display: inline-flex;
+        margin-right: 2rem;
+        line-height: 250px;
+        padding: 0;
+      }
+
+      .tools_dropdown {
+        position: relative;
+
+        .dropdown-nav {
+          display: none;
+          position: absolute;
+          top: 8.5rem;
+
+          ul {
+            padding: 0;
+
+            li {
+              line-height: 1rem;
+              margin: 0;
+
+              a {
+                font-family: $font-family-headers;
+              }
+
+              a:hover {
+                font-weight: bold;
+              }
+            }
+
+            li:first-child {
+              border-top: 0.5px solid white;
+              padding-top: 1rem;
+              width: 140px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      .tools_dropdown:hover {
+        .dropdown-nav {
+          display: block;
+        }
+      }
+
+      li {
+        width: 201px;
+        text-align: center;
+        margin: 0 0.25rem;
+
+        a {
+          color: white;
+        }
+      }
+
+      .nav_active {
+        background: black;
+        height: 100%;
+
+        a {
+          color: white;
+        }
+      }
+
+      .search_tag {
+        align-self: center;
+        margin-left: 0.5rem;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      li:hover {
+        background: black;
+        width: 201px;
+      }
+    }
+  }
+
+  .sidebar {
+    .sidebar_content {
+      max-width: 1400px;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+  }
+
+  .home_large_article {
+    padding: 3rem 5rem;
+  }
+
+  .section03 {
+    padding-bottom: 7rem;
+
+    .section03_header {
+      @include divider-line;
+
+      height: 1.5rem;
+      margin-bottom: 5rem;
+
+      h1 {
+        position: relative;
+        background: white;
+        width: 50%;
+        margin: 3rem auto;
+        border-bottom: none;
+      }
+
+      .latest {
+        width: 35%;
+      }
+    }
+
+    .primary_article {
+      display: flex;
+      justify-content: space-between;
+
+      .primary_article_content {
+        display: flex;
+        flex-direction: column;
+        width: calc(33% - 1.5rem);
+        height: auto;
+
+        .primary_title {
+          width: 100%;
+
+          h4 {
+            font-size: 1.2rem;
+          }
+        }
+
+        .primary-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .hero.tools.travel {
+    .side-nav {
+      max-width: 1400px;
+      margin: 0 auto;
+
+      .side-nav--header {
+        max-height: 575px;
+      }
+
+      .sublinks {
+        order: 2;
+        background: #e6e4e4;
+        width: 450px;
+
+        .orange_box {
+          width: 200px;
+          height: 200px;
+          margin: 7rem auto 1rem;
+
+          .pointer_line {
+            right: 95px;
+            bottom: -160px;
+          }
+        }
+
+        p.signup.travel_header {
+          bottom: 170px;
+        }
+
+        .floating_header {
+          bottom: 170px;
+        }
+
+        .sublinks_links {
+          bottom: 50px;
+
+          a {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section03.tools.travel {
+    .section03_header {
+      .spotlight.index {
+        width: 50%;
+      }
+    }
+
+    .contain {
+      .travel_category_title {
+        margin: 9rem 0 1rem 0.75rem;
+
+        .travel_filter_buttons {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  footer {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 2rem 5rem;
+
+    li {
+      display: inline-flex;
+    }
+
+    .footer_content {
+      width: 100%;
+      max-width: 1400px;
+      position: relative;
+      margin: 0 auto 90px;
+
+      .footer_img {
+        position: absolute;
+        top: -0.3rem;
+        bottom: 9.5rem;
+      }
+
+      .footer_mobile-nav {
+        text-align: right;
+      }
+
+      .footer_copy {
+        text-align: left;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}

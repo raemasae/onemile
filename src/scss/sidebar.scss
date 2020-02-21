@@ -1,0 +1,205 @@
+$promo_font-size: 0.6rem;
+$promo_text_transform: capitalize;
+$promo_line_height: 1.5;
+
+.sidebar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.8rem 1rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 130px;
+
+  .sidebar_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .cards_promo {
+      display: flex;
+      flex-direction: column;
+      height: 55px;
+      border-bottom: 0.5px solid #2a2a2a;
+      margin-bottom: 0.75rem;
+
+      .hidden {
+        display: none;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: #2a2a2a;
+      }
+
+      .cards_promo_detail {
+        display: flex;
+        justify-content: center;
+
+        .ritz {
+          height: 50px;
+        }
+
+        img {
+          width: 60px;
+        }
+
+        .promo_text {
+          margin-left: 0.5rem;
+          width: 120px;
+        }
+
+        p {
+          font-size: 0.7rem;
+          width: auto;
+          color: #2a2a2a;
+        }
+      }
+
+      .cards_promo_detail.hidden {
+        display: none;
+      }
+    }
+
+    .subscribe {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      height: 50px;
+
+      .free {
+        margin-top: 0;
+        width: 90px;
+        font-size: 0.7rem;
+
+        .mobile_edit {
+          display: none;
+        }
+      }
+
+      .email {
+        margin: 0 0 1rem;
+        width: 175px;
+        border: 0.15px solid #333;
+        text-align: center;
+        padding-top: 10px;
+        color: #999;
+        display: none;
+      }
+
+      a {
+        .subscribe_button {
+          margin: 0 0 1rem;
+          // padding: 0 0.5rem;
+          text-align: center;
+          color: white;
+          background: black;
+          line-height: 35px;
+          padding: 0 2.5rem;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: $promo_font-size;
+    text-transform: $promo_text_transform;
+    line-height: $promo_line_height;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .sidebar {
+    .sidebar_content {
+      .cards_promo {
+        flex-direction: row;
+        justify-content: center;
+
+        p {
+          width: auto;
+          margin-right: 2rem;
+        }
+
+        .title {
+          display: flex;
+          margin-top: 0;
+          width: 140px;
+        }
+
+        .cards_promo_detail {
+          .promo_text {
+            width: auto;
+          }
+        }
+
+        .cards_promo_detail.hidden {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    height: 90px;
+
+    .sidebar_content {
+      flex-direction: row;
+      margin-top: 1rem;
+
+      p {
+        margin-right: 0.7rem;
+        padding-top: 5px;
+      }
+
+      .cards_promo {
+        display: inline-flex;
+        border-bottom: none;
+
+        .title {
+          width: 120px;
+          font-size: 0.6rem;
+          text-align: left;
+        }
+
+        .cards_promo_detail:last-of-type {
+          margin-left: -20px;
+        }
+      }
+
+      .subscribe {
+        margin: 0;
+
+        .free {
+          padding-top: 5px;
+        }
+
+        .email {
+          display: block;
+          height: 40px;
+        }
+
+        p {
+          margin: 0.5rem;
+        }
+
+        a {
+          .subscribe_button {
+            padding: 0 1rem;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-bottom: 90px;
+  }
+}

@@ -1,0 +1,30 @@
+.toggle-nav {
+  margin: 3rem 0;
+
+  li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: #2a2a2a;
+      font-family: $font-family-headers;
+      font-size: 1rem;
+    }
+
+    a:hover {
+      color: #999;
+    }
+  }
+}
+
+.toggle-nav.img_back {
+  li {
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: #999;
+    }
+  }
+}

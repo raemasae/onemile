@@ -1,0 +1,42 @@
+.grid_articles {
+  margin-top: 0;
+
+  .grid_articles_large {
+    background-image: url('src/images/wing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-blend-mode: multiply;
+
+    h3,
+    h4,
+    p {
+      color: white;
+      text-shadow: 0.5px 0.5px 10px rgba(107, 106, 106, 0.54);
+    }
+
+    h3 {
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-weight: 900;
+      margin-bottom: 0.3rem;
+    }
+
+    .grid_articles_hover {
+      display: none;
+    }
+  }
+
+  .grid_articles_large:hover {
+    @include hover;
+  }
+}
+
+.grid_articles {
+  .grid_articles_large.credit {
+    background-image: url('src/images/money&cards.jpg');
+  }
+}

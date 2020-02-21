@@ -1,0 +1,65 @@
+@media screen and (min-width: 700px) {
+  .contact_form {
+    &_content {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero.contact {
+    padding-bottom: 500px;
+
+    .contact_intro {
+      left: 2rem;
+      bottom: 5rem;
+      width: 45vw;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+
+    &_content {
+      margin: 0 auto;
+      width: auto;
+      max-width: 700px;
+
+      .contact_form_field {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem 2rem 0;
+
+        p {
+          width: 100px;
+          text-align: right;
+          padding-right: 1rem;
+          text-transform: uppercase;
+          font-family: 'Lato', sans-serif;
+        }
+
+        input {
+          width: 300px;
+          height: 2rem;
+        }
+
+        .message {
+          width: 500px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
